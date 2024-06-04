@@ -1,8 +1,8 @@
-"use client";
+'use client';
 
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react';
 
-export const useLocalStorage = (key: string, initialValue) => {
+export const useLocalStorage = (key: string, initialValue: unknown) => {
   const [storedValue, setStoredValue] = useState(initialValue);
 
   useEffect(() => {
@@ -12,7 +12,7 @@ export const useLocalStorage = (key: string, initialValue) => {
     }
   }, [key]);
 
-  const setValue = (value) => {
+  const setValue = (value: unknown) => {
     setStoredValue(value);
     window.localStorage.setItem(key, JSON.stringify(value));
   };
