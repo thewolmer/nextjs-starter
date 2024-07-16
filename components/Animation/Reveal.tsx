@@ -1,6 +1,6 @@
 'use client';
 import { motion, useAnimation, useInView } from 'framer-motion';
-import React, { ReactNode, useEffect, useRef } from 'react';
+import React, { type ReactNode, useEffect, useRef } from 'react';
 
 import { fadeInUp } from '@/lib/animations';
 

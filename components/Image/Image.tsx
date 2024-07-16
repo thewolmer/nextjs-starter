@@ -1,6 +1,6 @@
 'use client';
 
-import NextImage, { ImageProps } from 'next/image';
+import NextImage, { type ImageProps } from 'next/image';
 import { useState } from 'react';
 
 import { blurDataURL, defaultFallbackImage } from './FallbackImage';

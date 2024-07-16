@@ -1,6 +1,6 @@
 'use client';
 import { motion } from 'framer-motion';
-import React, { ReactNode } from 'react';
+import React, { type ReactNode } from 'react';
 
 import { Fade } from '@/lib/animations';
 
